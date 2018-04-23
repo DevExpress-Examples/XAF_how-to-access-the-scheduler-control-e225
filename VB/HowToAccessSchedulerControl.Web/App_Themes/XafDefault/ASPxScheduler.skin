@@ -1,0 +1,31 @@
+﻿<%@ Register TagPrefix="dxwschs" Namespace="DevExpress.Web.ASPxScheduler" Assembly="DevExpress.Web.ASPxScheduler.v8.3" %>
+
+<dxwschs:ASPxScheduler runat="server">
+	<Styles CssFilePath="~/App_Themes/XafDefault/{0}/styles.css" CssPostfix="xaf" 
+		SelectionColor="#719EDC">
+		<ResourceNavigator ButtonSpacing="3px" />
+		<ViewNavigator ButtonSpacing="3px" />
+	</Styles>
+	<Images ImageFolder="~/App_Themes/XafDefault/{0}/">
+		<ResourceNavigator>
+			<First Width="26px" Height="20px" />
+			<Prev Width="20px" Height="20px" />
+			<PrevPage Width="23px" Height="20px" />
+			<NextPage Width="23px" Height="20px" />
+			<Next Width="20px" Height="20px" />
+			<Last Width="26px" Height="20px" />
+			<Decrease Width="20px" Height="20px" />
+			<Increase Width="20px" Height="20px" />
+		</ResourceNavigator>                                                          
+		<NavigationButton>
+			<Backward Width="21px" Height="40px" />
+			<Forward Width="21px" Height="40px" />
+		</NavigationButton>      
+		<StatusInfo>
+			<Error Width="48px" Height="48px" />
+			<Info Width="48px" Height="48px"/>
+			<Warning Width="48px" Height="48px" />
+		</StatusInfo>
+		<FormCloseButton Width="13px" Height="12px" />
+	</Images>
+</dxwschs:ASPxScheduler>

@@ -1,0 +1,5 @@
+﻿<%@ Register TagPrefix="dxwschs" Namespace="DevExpress.Web.ASPxScheduler" Assembly="DevExpress.Web.ASPxScheduler.v8.3" %>
+<dxwschs:ASPxDateNavigator runat="server" 
+    CssFilePath="~/App_Themes/XafDefault/{0}/styles.css" CssPostfix="xaf" 
+    ImageFolder="~/App_Themes/XafDefault/{0}/">
+</dxwschs:ASPxDateNavigator>
