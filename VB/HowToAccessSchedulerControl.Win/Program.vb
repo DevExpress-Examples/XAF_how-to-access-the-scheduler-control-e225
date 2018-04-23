@@ -1,0 +1,37 @@
+Imports System.Configuration
+
+Imports DevExpress.ExpressApp
+Imports DevExpress.ExpressApp.Security
+Imports DevExpress.ExpressApp.Win
+Imports DevExpress.Persistent.Base
+Imports DevExpress.Persistent.BaseImpl
+
+Namespace HowToAccessSchedulerControl.Win
+   Friend NotInheritable Class Program
+
+       Private Sub New()
+       End Sub
+
+      ''' <summary>
+      ''' The main entry point for the application.
+      ''' </summary>
+      <STAThread> _
+      Shared Sub Main()
+         Application.EnableVisualStyles()
+         Application.SetCompatibleTextRenderingDefault(False)
+         EditModelPermission.AlwaysGranted = System.Diagnostics.Debugger.IsAttached
+            Dim _application As New HowToAccessSchedulerControlWindowsFormsApplication()
+            If ConfigurationManager.ConnectionStrings("ConnectionString") IsNot Nothing Then
+                _application.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
+            End If
+            Try
+                DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.Register()
+                _application.ConnectionString = DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.ConnectionString
+                _application.Setup()
+                _application.Start()
+            Catch e As Exception
+                _application.HandleException(e)
+            End Try
+      End Sub
+   End Class
+End Namespace
