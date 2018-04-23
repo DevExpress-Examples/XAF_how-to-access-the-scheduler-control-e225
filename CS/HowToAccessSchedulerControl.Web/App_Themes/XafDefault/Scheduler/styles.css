@@ -1,0 +1,399 @@
+.dxscControl_xaf
+{    
+    background: #D0D7E5;
+	border: solid 1px #D0D7E5;
+}
+.dxscLoadingPanel_xaf
+{
+	border:solid 1px #D0D7E5;
+	background-color: white;
+	font: 100% Tahoma;
+	color: #758D5E;
+}
+.dxscLoadingPanel_xaf td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px;
+}
+.dxscLoadingDiv_xaf
+{
+    background: White ;
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+    cursor: wait;
+}
+
+/* Headers */
+.dxscDateHeader_xaf, 
+.dxscAlternateDateHeader_xaf,
+.dxscDayHeader_xaf,
+.dxscDateCellHeader_xaf,
+.dxscTodayCellHeader_xaf,
+.dxscTimelineDateHeader_xaf,
+.dxscHorizontalResourceHeader_xaf,
+.dxscVerticalResourceHeader_xaf
+{    
+    color: black;
+    background: url(CssImages/DateHeaderBack.gif) repeat-x left top #BDD4F2;
+    border: solid 1px #D0D7E5;
+    border-width: 0 1px 1px 0;
+    padding: 4px;
+	font: 100% Tahoma;		
+	text-align: center;
+    vertical-align: top;
+    cursor: default;
+	overflow: hidden;
+	white-space: nowrap;	
+}
+
+.dxscAlternateTimelineDateHeader_xaf,
+.dxscAlternateDateHeader_xaf
+{    
+    background: url(CssImages/DateHeaderAltBack.gif) repeat-x left top #FFD294;
+    color: black;
+}
+.dxscDayHeader_xaf
+{
+	border-width: 1px 1px 0 0;
+}
+.dxscDateCellHeader_xaf
+{
+    border-width: 1px;
+}
+.dxscTodayCellHeader_xaf
+{    
+	border-top-width: 1px;
+	background: url(CssImages/HeaderAltBack.gif) repeat-x left top #7CABC4;
+    color: #FFFFFF;
+}
+.dxscTimelineDateHeader_xaf
+{
+    border-width: 1px 1px 1px 0;
+}
+.dxscHorizontalResourceHeader_xaf
+{
+    border-color: #D0D7E5;
+	border-width: 1px 1px 1px 0;
+    background: url(CssImages/ResourceHeaderBack.gif) repeat-x left top #99BDF0;    
+}
+.dxscVerticalResourceHeader_xaf
+{
+    border-width: 1px 1px 0 0;
+	border-top-color: #D0D7E5;
+    background: #BCD4F3;    
+    white-space: normal;
+}
+.dxscSelectionBar_xaf 
+{	
+    border-style: solid;
+	border-width: 0 1px 0 0;
+	height: 30px;
+}
+
+/* Corners */
+.dxscLeftTopCorner_xaf, 
+.dxscRightTopCorner_xaf
+{
+    background-color: #E3EDFE;
+	width: 1px;
+    border-style: solid;
+    border-color: #D0D7E5;	
+	border-width: 0 0 1px;
+}
+.dxscLeftTopCorner_xaf
+{    
+    border-width: 1px 1px 1px 0;
+    font: 8pt Tahoma;
+    text-align: center;
+    padding: 2px;
+}
+
+/* Separators */
+.dxscGroupSeparatorVertical_xaf ,
+.dxscGroupSeparatorHorizontal_xaf
+{
+	background: #EAF3FE;
+	border: solid 1px #D0D7E5;
+}
+.dxscGroupSeparatorVertical_xaf
+{
+    width: 1px; 
+    border-width: 0 1px;
+}
+.dxscGroupSeparatorHorizontal_xaf
+{
+	height: 1px;
+    border-width: 1px 0 0;
+    font-size: 1px;
+}
+
+/* Apts Area */
+.dxscAllDayArea_xaf
+{
+    background-color: #E3EDFE;
+    border: solid 1px #BFD3EE ;
+    border-width: 0 1px 1px 0;
+}
+.dxscDateCellBody_xaf 
+{
+	height: 100px;
+    border: solid 1px;
+    border-width: 0 1px 0 0;
+}
+.dxscTimeCellBody_xaf
+{
+    border: solid 1px;
+	font: 100% Tahoma;
+}
+.dxscTimelineCellBody_xaf
+{
+	height: 300px;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+}
+
+.dxscAppointment_xaf
+{
+    color: black;
+    font: 8pt Tahoma;
+    border: solid 1px #7f9db9;
+    padding: 0;
+	margin: 0;
+	cursor: default;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;	
+}
+
+.dxscAppointmentInnerBorders_xaf
+{	
+    border: solid 1px #7f9db9;
+    padding: 0px;
+}
+.dxscMoreButton_xaf
+{
+	font: 8pt Tahoma;
+	color: black;
+	text-decoration: underline;	
+	padding: 0;	
+}
+.dxscAppointmentHorizontalSeparator_xaf
+{
+	height: 1px;
+	width: 100%;
+	overflow: hidden;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+}
+/* Rulers */
+.dxscTimeRulerHoursItem_xaf, .dxscTimeRulerMinuteItem_xaf
+{
+    color:black;
+    background: #EFF5FE;
+    border: solid 1px #BFD3EE ;
+    border-width: 0px 1px 1px 0;
+	vertical-align: top;
+	white-space: nowrap;
+} 
+.dxscTimeRulerHoursItem_xaf
+{
+    border-right-width: 0;
+    border-left-color: black;
+    font: 13pt Tahoma;
+	text-align: right;
+	width: 45px;
+    padding: 2px 4px 0px;
+}
+.dxscTimeRulerMinuteItem_xaf
+{
+    border-left-width: 0px;
+	text-align: center;
+	width: 13px;
+	font: 8pt Tahoma;
+    padding: 4px;
+    padding-left: 1px;
+}
+
+.dxscTimeRulerHeaderHourItem_xaf
+{
+    width: 55px;
+}
+.dxscTimeRulerHeaderMinuteItem_xaf
+{
+    width: 16px;
+}
+.dxscScrollHeaderItem_xaf 
+{
+    width: 16px;
+}
+
+
+/* Control elements */
+.dxscToolbar_xaf 
+{
+	background-color: #EDF5FE;
+	padding: 9px 0px 9px 12px;
+}
+.dxscViewSelector_xaf 
+{    
+    background-color: #EDF5FE;
+	padding: 0px 0px;   
+}
+.dxscResourceNavigator_xaf 
+{    
+    background: #BCD5F5;
+    padding: 7px;
+    border: solid 1px #D0D7E5;
+}
+.dxscViewVisibleInterval_xaf
+{
+    color: black;
+    font: 100% Tahoma;
+    white-space: nowrap;
+}
+.dxscTooltip_xaf 
+{
+    background: #f9f9cd;
+    padding: 4px 10px;
+    font: 8pt Tahoma;
+    color: #303030;
+    white-space: nowrap;
+}
+.dxscInplaceEditor_xaf
+{
+	background: #EDF5FE;
+	border: solid 3px black;
+	padding: 0;
+	font: 8pt Tahoma;
+	color: Black;
+}
+.dxscErrorInfo_xaf
+{
+	background: #f1abab;
+	color: #853a3a;
+	padding: 10px;
+	border: solid 1px Black;
+    border-width: 1px 0;
+}
+
+/* Buttons */
+.dxscViewNavigatorButton_xaf
+{    
+    background: url(CssImages/ButtonBack.gif) repeat-x top #99BDF0;
+	border: solid 1px #85A5D1;
+    height: 19px;
+    padding: 0px 7px;
+    font: 100% Tahoma;
+  	color: black;        
+	cursor: pointer;
+	cursor: hand;
+}
+.dxscViewNavigatorButtonHover_xaf
+{
+	background: url(CssImages/ButtonHoverBack.gif) repeat-x top #fff2c8;
+	border: solid 1px #DBCE99;
+}
+.dxscViewNavigatorButtonPressed_xaf
+{
+    background: url(CssImages/ButtonPressedBack.gif) repeat-x #FFCB87;
+}
+
+.dxscViewSelectorButton_xaf 
+{
+    background: url(CssImages/ViewSelectorButtonBack.gif) repeat-x left top #99BDF0;
+	border: solid 1px #D0D7E5;
+	border-width: 0 0 0 1px;
+	padding: 13px 18px;
+	font: 100% Tahoma;
+	color: Black;
+    cursor: pointer;
+    cursor: hand;
+}
+.dxscViewSelectorButtonHover_xaf 
+{
+	background: url(CssImages/ViewSelectorButtonBackHover.gif) repeat-x #FFD294;
+    border-color: #DBCE99;
+}
+.dxscViewSelectorButtonChecked_xaf 
+{
+    background: url(CssImages/ViewSelectorButtonBackPressed.gif) repeat-x #FFCF8B;
+    border-color: #D0D7E5;
+}
+.dxscViewSelectorButtonPressed_xaf
+{
+    background: url(CssImages/ViewSelectorButtonBackPressed.gif) repeat-x #FFCF8B;
+    border-color: #D0D7E5;
+}
+
+.dxscResourceNavigatorButton_xaf
+{    
+    background: #99BDF0;
+	cursor: pointer;
+	cursor: hand;
+}
+.dxscResourceNavigatorButtonHover_xaf
+{
+    background: #FFD294;
+}
+.dxscResourceNavigatorButtonPressed_xaf
+{
+    background: #FFD294;
+}
+
+.dxscNavigationButton_xaf
+{
+    background: #99BDF0;
+	cursor: pointer;
+	cursor: hand;
+}
+.dxscNavigationButtonHover_xaf
+{
+    background: #FFD294;    
+}
+.dxscNavigationButtonPressed_xaf
+{
+    background: #FFD294;    
+}
+
+.dxscSmartTagButton_xaf 
+{
+    background: url(CssImages/ButtonBack.gif) repeat-x #99BDF0;
+	border: solid 1px #D0D7E5;
+    padding: 4px 5px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.dxscDVBottomMoreButton_xaf,
+.dxscDVTopMoreButton_xaf
+{
+	cursor: pointer;
+	cursor: hand;
+}
+
+.dxscNoBorderButton_xaf
+{
+	cursor: pointer;
+	cursor: hand;
+	border: solid 1px #EDF5FE;
+}
+.dxscNoBorderButtonHover_xaf
+{
+    background: #C4DFEE;
+    border-color: #A4BED1;
+}
+.dxscNoBorderButtonPressed_xaf
+{
+    background: #B6D5E3;
+    border-color: #A4BED1;
+}
+.dxscControlAreaForm_xaf
+{
+	font: 12pt Tahoma;
+	color: black;
+	white-space: normal;
+	padding: 9px 12px 13px 12px;
+	background-color: white;	
+}
