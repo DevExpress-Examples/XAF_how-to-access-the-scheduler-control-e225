@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C702D8D-4643-4204-8ED5-B74C3829C601}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>HowToAccessSchedulerControl.Web</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Images.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Objects.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Scheduler.v10.2, Version=10.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Scheduler.Web.v10.2, Version=10.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Web.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxEditors.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGridView.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v10.2, Version=10.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v10.2.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v10.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v10.2.Core, Version=10.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.asp" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\ButtonBkg.gif" />
+    <Content Include="Images\ExpressAppLogo.png" />
+    <Content Include="Images\FooterBkg.gif" />
+    <Content Include="Images\GridHeaderBkg.gif" />
+    <Content Include="Images\HeaderBkg.gif" />
+    <Content Include="Images\LayoutHeaderBkg.gif" />
+    <Content Include="Images\Progress.gif" />
+    <Content Include="Images\SelectedCenter.gif" />
+    <Content Include="Images\SelectedCenterWhite.gif" />
+    <Content Include="Images\SelectedLeft.gif" />
+    <Content Include="Images\SelectedLeftWhite.gif" />
+    <Content Include="Images\SelectedRight.gif" />
+    <Content Include="Images\SelectedRightWhite.gif" />
+    <Content Include="Images\SideBarRDCorner.gif" />
+    <Content Include="Images\SideBarRUCorner.gif" />
+    <Content Include="Images\TabContentBkg.gif" />
+    <Content Include="Images\UnSelectedCenter.gif" />
+    <Content Include="Images\UnSelectedLeft.gif" />
+    <Content Include="Images\UnSelectedRight.gif" />
+    <Content Include="MoveFooter.js" />
+    <Content Include="SessionKeepAliveReconnect.aspx" />
+    <Content Include="TemplateStyle.css" />
+    <Content Include="Web.config" />
+    <Content Include="XAFControlsStyle.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationCode\WebApplication.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="SessionKeepAliveReconnect.aspx.vb">
+      <DependentUpon>SessionKeepAliveReconnect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionKeepAliveReconnect.aspx.designer.vb">
+      <DependentUpon>SessionKeepAliveReconnect.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ApplicationCode\WebApplication.resx">
+      <DependentUpon>WebApplication.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model.xafml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HowToAccessSchedulerControl.Module.Web\HowToAccessSchedulerControl.Module.Web.vbproj">
+      <Project>{14D8D6FE-C6A0-44CD-9575-B5E4E0E513F2}</Project>
+      <Name>HowToAccessSchedulerControl.Module.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HowToAccessSchedulerControl.Module\HowToAccessSchedulerControl.Module.vbproj">
+      <Project>{34651618-FC55-4A2E-A0B4-2CCB785BF561}</Project>
+      <Name>HowToAccessSchedulerControl.Module</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\AppointmentForm.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\GotoDateForm.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\InplaceEditor.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\RecurrentAppointmentDeleteForm.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\RecurrentAppointmentEditForm.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\HorizontalAppointmentTemplate.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\VerticalAppointmentTemplate.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\HorizontalSameDayAppointmentTemplate.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\AppointmentForm.ascx.designer.vb">
+      <DependentUpon>AppointmentForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\GotoDateForm.ascx.designer.vb">
+      <DependentUpon>GotoDateForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\HorizontalAppointmentTemplate.ascx.designer.vb">
+      <DependentUpon>HorizontalAppointmentTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\HorizontalSameDayAppointmentTemplate.ascx.designer.vb">
+      <DependentUpon>HorizontalSameDayAppointmentTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\InplaceEditor.ascx.designer.vb">
+      <DependentUpon>InplaceEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\RecurrentAppointmentDeleteForm.ascx.designer.vb">
+      <DependentUpon>RecurrentAppointmentDeleteForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\RecurrentAppointmentEditForm.ascx.designer.vb">
+      <DependentUpon>RecurrentAppointmentEditForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\ReminderForm.ascx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\ReminderForm.ascx.designer.vb">
+      <DependentUpon>ReminderForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\VerticalAppointmentTemplate.ascx.designer.vb">
+      <DependentUpon>VerticalAppointmentTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog.aspx.vb">
+      <DependentUpon>Dialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dialog.aspx.designer.vb">
+      <DependentUpon>Dialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.vb">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.vb">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NestedFrameControl.ascx.vb">
+      <DependentUpon>NestedFrameControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedFrameControl.ascx.designer.vb">
+      <DependentUpon>NestedFrameControl.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\AppointmentForm.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\GotoDateForm.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\InplaceEditor.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\RecurrentAppointmentDeleteForm.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\RecurrentAppointmentEditForm.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\HorizontalAppointmentTemplate.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\VerticalAppointmentTemplate.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\HorizontalSameDayAppointmentTemplate.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\XafDefault\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtButtonBackDis.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtButtonBackHover.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtButtonBackPressed.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtCalendarFNNextYear.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtCalendarFNPrevYear.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtCalendarHeadBack.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtCalendarNextMonth.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtCalendarNextMonthDisabled.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtCalendarNextYear.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtCalendarNextYearDisabled.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtCalendarPrevMonth.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtCalendarPrevMonthDisabled.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtCalendarPrevYear.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtCalendarPrevYearDisabled.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtDropDown.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtDropDownDisabled.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtEllipsis.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtEllipsisDisabled.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtError.png" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinEditDecrementImage.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinEditDecrementImageDisabled.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinEditIncrementImage.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinEditIncrementImageDisabled.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinEditLargeDecImage.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinEditLargeDecImageDisabled.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinEditLargeIncImage.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinEditLargeIncImageDisabled.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinIncBtnHBack.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinIncBtnPBack.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinLargeIncBtnBack.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinLargeIncBtnHBack.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\edtSpinLargeIncBtnPBack.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\Loading.gif" />
+    <Content Include="App_Themes\XafDefault\Editors\styles.css" />
+    <Content Include="App_Themes\XafDefault\GridView\gvCollapsedButton.png" />
+    <Content Include="App_Themes\XafDefault\GridView\gvDragAndDropArrowDown.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\gvDragAndDropArrowUp.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\gvDragAndDropHideColumn.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\gvExpandedButton.png" />
+    <Content Include="App_Themes\XafDefault\GridView\gvFilterRowButton.png" />
+    <Content Include="App_Themes\XafDefault\GridView\gvFocusedBack.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\gvGradient.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\gvHeaderFilter.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\gvHeaderFilterActive.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\gvHeaderSortDown.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\gvHeaderSortUp.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\gvParentGroupRows.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\gvTitleBack.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\Loading.gif" />
+    <Content Include="App_Themes\XafDefault\GridView\styles.css" />
+    <Content Include="App_Themes\XafDefault\GridView\WindowResizer.gif" />
+    <Content Include="App_Themes\XafDefault\Web\hlTail.gif" />
+    <Content Include="App_Themes\XafDefault\Web\Loading.gif" />
+    <Content Include="App_Themes\XafDefault\Web\MenuBg.gif" />
+    <Content Include="App_Themes\XafDefault\Web\mHorizontalPopOut.gif" />
+    <Content Include="App_Themes\XafDefault\Web\mItemBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\mItemSeparatorBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\mItemVerticalSeparatorBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\mPopupBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\mPopupHBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\mPopupSeparatorBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\mSubMenuItem.gif" />
+    <Content Include="App_Themes\XafDefault\Web\mSubMenuItemChecked.gif" />
+    <Content Include="App_Themes\XafDefault\Web\mVerticalPopOut.gif" />
+    <Content Include="App_Themes\XafDefault\Web\nbBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\nbCollapse.png" />
+    <Content Include="App_Themes\XafDefault\Web\nbExpand.png" />
+    <Content Include="App_Themes\XafDefault\Web\nbGroupBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\nbGroupHeaderBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\nbHBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\nbSBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\pAll.png" />
+    <Content Include="App_Themes\XafDefault\Web\pAllDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Web\pcCloseButton.png" />
+    <Content Include="App_Themes\XafDefault\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\pcSizeGrip.png" />
+    <Content Include="App_Themes\XafDefault\Web\pFirst.png" />
+    <Content Include="App_Themes\XafDefault\Web\pFirstDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Web\pLast.png" />
+    <Content Include="App_Themes\XafDefault\Web\pLastDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Web\pNext.png" />
+    <Content Include="App_Themes\XafDefault\Web\pNextDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Web\pPrev.png" />
+    <Content Include="App_Themes\XafDefault\Web\pPrevDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Web\rpBottomLeftCorner.png" />
+    <Content Include="App_Themes\XafDefault\Web\rpBottomRightCorner.png" />
+    <Content Include="App_Themes\XafDefault\Web\rpHeader.png" />
+    <Content Include="App_Themes\XafDefault\Web\rpNoHeaderTopLeftCorner.png" />
+    <Content Include="App_Themes\XafDefault\Web\rpNoHeaderTopRightCorner.png" />
+    <Content Include="App_Themes\XafDefault\Web\rpTopEdge.png" />
+    <Content Include="App_Themes\XafDefault\Web\rpTopLeftCorner.png" />
+    <Content Include="App_Themes\XafDefault\Web\rpTopRightCorner.png" />
+    <Content Include="App_Themes\XafDefault\Web\smBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\smFirstLevelBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\smSecondLevelBullet.gif" />
+    <Content Include="App_Themes\XafDefault\Web\styles.css" />
+    <Content Include="App_Themes\XafDefault\Web\tcBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\tcTabABack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\tcTabAHBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\tcTabHBack.gif" />
+    <Content Include="App_Themes\XafDefault\Web\tiBackToTop.gif" />
+    <Content Include="App_Themes\XafDefault\Web\TreeAction_styles.css" />
+    <Content Include="App_Themes\XafDefault\Xaf\1x1.gif" />
+    <Content Include="App_Themes\XafDefault\Xaf\background.jpg" />
+    <Content Include="App_Themes\XafDefault\Xaf\BackgroundRepeat.gif" />
+    <Content Include="App_Themes\XafDefault\Xaf\CornerBL.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\CornerBLW.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\CornerBR.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\CornerBRW.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\CornerTL.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\CornerTR.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\DarkBottomLeftCorner.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\DarkBottomRightCorner.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\DarkTopLeftCorner.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\DarkTopRightCorner.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\Default.css" />
+    <Content Include="App_Themes\XafDefault\Xaf\DialogBackImage.jpg" />
+    <Content Include="App_Themes\XafDefault\Xaf\DialogBackRepeat.gif" />
+    <Content Include="App_Themes\XafDefault\Xaf\dropDownArrow.gif" />
+    <Content Include="App_Themes\XafDefault\Xaf\dropDownArrowDisabled.gif" />
+    <Content Include="App_Themes\XafDefault\Xaf\edtButtonBack.gif" />
+    <Content Include="App_Themes\XafDefault\Xaf\GripLeft.gif" />
+    <Content Include="App_Themes\XafDefault\Xaf\GripRight.gif" />
+    <Content Include="App_Themes\XafDefault\Xaf\HeaderLeft.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\HeaderRight.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\LayoutTabSelectedLeft.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\LayoutTabSelectedMiddle.gif" />
+    <Content Include="App_Themes\XafDefault\Xaf\LayoutTabSelectedRight.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\Logo.gif" />
+    <Content Include="App_Themes\XafDefault\Xaf\Logo.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\LogoSmall.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\MainHeaderBG.gif" />
+    <Content Include="App_Themes\XafDefault\Xaf\NavtabSelectedLeft.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\NavtabSelectedMiddle.gif" />
+    <Content Include="App_Themes\XafDefault\Xaf\NavtabSelectedRight.png" />
+    <Content Include="App_Themes\XafDefault\Xaf\styles_xaf.css" />
+    <Content Include="App_Themes\XafDefault\Xaf\template.css" />
+    <Content Include="App_Themes\XafDefault\Xaf\TreeAction_styles.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="DevExpress\ASPxSchedulerForms\ReminderForm.ascx" />
+    <Content Include="Dialog.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="NestedFrameControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\XafDefault\ASPxButton.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxButtonEdit_Xaf.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxButton_Xaf.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxCalendar.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxCallbackPanel.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxCloudControl.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxComboBox.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxComboBox_Xaf.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxDataView.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxGridView.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxGridView_xaf.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxHeadline.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxLabel.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxListBox.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxLoadingPanel.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxMemo.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxMenu.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxNavBar.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxNewsControl.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxPageControl.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxPager.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxPopupControl.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxPopupMenu.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxRoundPanel.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxSiteMapControl.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxTabControl.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxTabControl_Xaf.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxTextBox.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxTitleIndex.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\XafDefault\ASPxDateNavigator.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxScheduler_Xaf.skin" />
+    <Content Include="App_Themes\XafDefault\ASPxScheduler.skin" />
+    <Content Include="DevExpress\ASPxSchedulerForms\AppointmentFormEx.ascx" />
+    <Compile Include="DevExpress\ASPxSchedulerForms\AppointmentFormEx.ascx.vb">
+      <DependentUpon>AppointmentFormEx.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\AppointmentFormEx.ascx.designer.vb">
+      <DependentUpon>AppointmentFormEx.ascx</DependentUpon>
+    </Compile>
+    <Content Include="App_Themes\XafDefault\Scheduler\styles.css" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ViewNavigator\Forward.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ViewNavigator\Backward.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\SmartTag.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Menu\RecurringAppointment.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Menu\NewAppointment.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Menu\GoToDate.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Menu\Delete.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Loading.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Error.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\CssImages\ViewSelectorButtonBackPressed.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\CssImages\ViewSelectorButtonBackHover.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\CssImages\ViewSelectorButtonBack.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\CssImages\ResourceHeaderBack.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\CssImages\DateHeaderBack.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\CssImages\DateHeaderAltBack.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\CssImages\ButtonPressedBack.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\CssImages\ButtonHoverBack.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\CssImages\ButtonBack.gif" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Tooltip\TopRight.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Tooltip\TopLeft.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Tooltip\Top.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Tooltip\Right.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Tooltip\Left.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Tooltip\BottomRight.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Tooltip\BottomLeft.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Tooltip\BottomArrow.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Tooltip\Bottom.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\StatusInfo\Warning.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\StatusInfo\Information.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\StatusInfo\Error.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\PrevPageHover.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\PrevPageDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\PrevPage.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\PrevHover.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\PrevDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\Prev.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\NextPageHover.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\NextPageDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\NextPage.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\NextHover.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\NextDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\Next.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\LastHover.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\LastDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\Last.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\IncreaseHover.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\IncreaseDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\Increase.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\FirstHover.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\FirstDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\First.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\DecreaseHover.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\DecreaseDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\ResourceNavigator\Decrease.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\NavigationButton\ForwardHover.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\NavigationButton\ForwardDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\NavigationButton\Forward.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\NavigationButton\BackwardHover.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\NavigationButton\BackwardDisabled.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\NavigationButton\Backward.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\MoreButton\TopHover.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\MoreButton\Top.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\MoreButton\BottomHover.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\MoreButton\Bottom.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Appointment\StartArrow.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Appointment\Reminder.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Appointment\Recurrence.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Appointment\NoRecurrence.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Appointment\NightClock.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Appointment\EndArrow.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\Appointment\DayClock.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_minute_55.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_minute_50.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_minute_45.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_minute_40.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_minute_35.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_minute_30.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_minute_25.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_minute_20.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_minute_15.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_minute_10.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_minute_05.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_minute_00.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_hour_55.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_hour_50.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_hour_45.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_hour_40.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_hour_35.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_hour_30.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_hour_25.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_hour_20.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_hour_15.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_hour_10.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_hour_05.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\night_hour_00.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_minute_55.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_minute_50.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_minute_45.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_minute_40.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_minute_35.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_minute_30.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_minute_25.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_minute_20.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_minute_15.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_minute_10.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_minute_05.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_minute_00.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_hour_55.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_hour_50.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_hour_45.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_hour_40.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_hour_35.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_hour_30.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_hour_25.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_hour_20.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_hour_15.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_hour_10.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_hour_05.png" />
+    <Content Include="App_Themes\XafDefault\Scheduler\AppointmentClockArrows\day_hour_00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2064</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl></IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
