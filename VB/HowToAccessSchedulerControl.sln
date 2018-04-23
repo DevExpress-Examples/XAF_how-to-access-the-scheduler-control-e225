@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HowToAccessSchedulerControl.Module", "HowToAccessSchedulerControl.Module\HowToAccessSchedulerControl.Module.vbproj", "{34651618-FC55-4A2E-A0B4-2CCB785BF561}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HowToAccessSchedulerControl.Module.Web", "HowToAccessSchedulerControl.Module.Web\HowToAccessSchedulerControl.Module.Web.vbproj", "{14D8D6FE-C6A0-44CD-9575-B5E4E0E513F2}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HowToAccessSchedulerControl.Web", "HowToAccessSchedulerControl.Web\HowToAccessSchedulerControl.Web.vbproj", "{1C702D8D-4643-4204-8ED5-B74C3829C601}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HowToAccessSchedulerControl.Module.Win", "HowToAccessSchedulerControl.Module.Win\HowToAccessSchedulerControl.Module.Win.vbproj", "{045A3BE7-D956-4663-A0EE-F6D6D4EFE6B3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HowToAccessSchedulerControl.Win", "HowToAccessSchedulerControl.Win\HowToAccessSchedulerControl.Win.vbproj", "{C0601C1A-CB59-486E-9882-07E33697E7A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34651618-FC55-4A2E-A0B4-2CCB785BF561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34651618-FC55-4A2E-A0B4-2CCB785BF561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34651618-FC55-4A2E-A0B4-2CCB785BF561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34651618-FC55-4A2E-A0B4-2CCB785BF561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14D8D6FE-C6A0-44CD-9575-B5E4E0E513F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D8D6FE-C6A0-44CD-9575-B5E4E0E513F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D8D6FE-C6A0-44CD-9575-B5E4E0E513F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14D8D6FE-C6A0-44CD-9575-B5E4E0E513F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C702D8D-4643-4204-8ED5-B74C3829C601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C702D8D-4643-4204-8ED5-B74C3829C601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C702D8D-4643-4204-8ED5-B74C3829C601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C702D8D-4643-4204-8ED5-B74C3829C601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{045A3BE7-D956-4663-A0EE-F6D6D4EFE6B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045A3BE7-D956-4663-A0EE-F6D6D4EFE6B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045A3BE7-D956-4663-A0EE-F6D6D4EFE6B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045A3BE7-D956-4663-A0EE-F6D6D4EFE6B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0601C1A-CB59-486E-9882-07E33697E7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0601C1A-CB59-486E-9882-07E33697E7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0601C1A-CB59-486E-9882-07E33697E7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0601C1A-CB59-486E-9882-07E33697E7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
