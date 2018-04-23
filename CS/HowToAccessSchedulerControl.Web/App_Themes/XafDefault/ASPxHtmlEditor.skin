@@ -1,0 +1,42 @@
+<%@ Register Assembly="DevExpress.Web.ASPxHtmlEditor.v9.3" Namespace="DevExpress.Web.ASPxHtmlEditor" TagPrefix="dxhe" %>
+
+<dxhe:ASPxHtmlEditor runat="server" >
+	<Styles CssPostfix="xaf" >
+		<ViewArea>
+			<Border BorderStyle="Solid" BorderColor="#ABC1DE" BorderWidth="1px" />
+		</ViewArea>
+	</Styles>
+	<StylesStatusBar>
+		<ActiveTab BackColor="White" />
+	</StylesStatusBar>
+	<ImagesEditors>
+		<DropDownEditDropDown Width="7px" Height="7px" Url="~/App_Themes/XafDefault/HtmlEditor/tbDropDown.png" UrlHottracked="~/App_Themes/XafDefault/HtmlEditor/tbDropDownHottracked.png" UrlDisabled="~/App_Themes/XafDefault/HtmlEditor/tbDropDownDisabled.png" />
+	</ImagesEditors>
+	<PartsRoundPanel>
+	    <TopLeftCorner Height="9px" Width="9px" Url="~/App_Themes/XafDefault/HtmlEditor/RoundPanel/herpTopLeftCorner.png" />
+	    <TopRightCorner Height="9px" Width="9px" Url="~/App_Themes/XafDefault/HtmlEditor/RoundPanel/herpTopRightCorner.png" />
+	    <NoHeaderTopLeftCorner Height="9px" Width="9px" Url="~/App_Themes/XafDefault/HtmlEditor/RoundPanel/herpNoHeaderTopLeftCorner.png" />
+	    <NoHeaderTopRightCorner Height="9px" Width="9px" Url="~/App_Themes/XafDefault/HtmlEditor/RoundPanel/herpNoHeaderTopRightCorner.png" />
+	    <BottomLeftCorner Height="9px" Width="9px" Url="~/App_Themes/XafDefault/HtmlEditor/RoundPanel/herpBottomLeftCorner.png" />
+	    <BottomRightCorner Height="9px" Width="9px" Url="~/App_Themes/XafDefault/HtmlEditor/RoundPanel/herpBottomRightCorner.png" />
+	    <%-- Middles --%>
+	    <TopEdge>
+	    </TopEdge>
+	    <NoHeaderTopEdge BackColor="#E9F2FF" />
+	    <%-- Header --%>
+	    <HeaderLeftEdge>
+            <BackgroundImage Repeat="RepeatX" VerticalPosition="bottom" HorizontalPosition="left" ImageUrl="~/App_Themes/XafDefault/Web/rpHeader.png" />
+	    </HeaderLeftEdge>
+	    <HeaderContent>
+            <BackgroundImage Repeat="RepeatX" VerticalPosition="bottom" HorizontalPosition="left" ImageUrl="~/App_Themes/XafDefault/Web/rpHeader.png" />
+	    </HeaderContent>
+	    <HeaderRightEdge>
+            <BackgroundImage Repeat="RepeatX" VerticalPosition="bottom" HorizontalPosition="left" ImageUrl="~/App_Themes/XafDefault/Web/rpHeader.png" />
+	    </HeaderRightEdge>
+	</PartsRoundPanel>
+	<StylesRoundPanel>            
+		<ControlStyle BackColor="#E9F2FF">
+			<Border BorderWidth="1px" BorderStyle="Solid" BorderColor="#ABC1DE" />
+		</ControlStyle>
+	</StylesRoundPanel>	
+</dxhe:ASPxHtmlEditor>
