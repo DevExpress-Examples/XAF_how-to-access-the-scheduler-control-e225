@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [SchedulerController.cs](./CS/HowToAccessSchedulerControl.Module.Web/SchedulerController.cs)
+* [SchedulerController.cs](./CS/HowToAccessSchedulerControl.Module.Win/SchedulerController.cs)
+<!-- default file list end -->
 # How to Access the Scheduler Control
 
 
