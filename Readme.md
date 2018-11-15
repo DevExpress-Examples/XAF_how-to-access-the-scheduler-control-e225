@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [SchedulerController.cs](./CS/HowToAccessSchedulerControl.Module.Win/SchedulerController.cs) (VB: [SchedulerController.vb](./VB/HowToAccessSchedulerControl.Module.Win/SchedulerController.vb))
+<!-- default file list end -->
 # How to Access the Scheduler Control
 
 
